@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+html {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Alata", "sans-serif";
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 45px;
+  margin: 0;
+}
+
+.hero .element3 {
+  padding-right: 30px;
+}
+.hero .element3 img {
+  position: absolute;
+}
+.hero .element3 .login {
+  translate: -15px;
+  position: relative;
+  right: 35px;
+  display: flex;
+  flex-direction: row;
+}
+.hero .element3 .login p {
+  padding-left: 30px;
+}
+.hero .element3 .carT {
+  margin-bottom: 25px;
+}
+.hero .element3 .signIn {
+  translate: 30px;
+}
+.hero .element3 .logIn {
+  translate: 30px;
+}
+
+.panels .container .seeAll {
+  width: 50%;
+}
+.panels .container .categories {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 3);
+}
+.panels .container .categories article {
+  height: 450px;
+}
+
+.incursion .container {
+  display: flex;
+  flex-direction: row;
+}
+.incursion .transition {
+  padding-right: 15px;
+  box-sizing: border-box;
+  width: 70%;
+}
+.incursion .transition .container1 {
+  padding-right: 0px;
+  height: 100%;
+}
+.incursion .transition .container1 picture img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.incursion .buttons {
+  width: 30%;
+}
+.incursion .buttons .container2 {
+  height: 100%;
+  row-gap: 15px;
+}
+.incursion .buttons .container2 div {
+  height: 100%;
+}
+.incursion .buttons .container2 div img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.incursion .buttons .container2 button {
+  padding: 0;
+  font-size: 1rem;
+  height: 2rem;
+}/*# sourceMappingURL=medium-scale copy.css.map */

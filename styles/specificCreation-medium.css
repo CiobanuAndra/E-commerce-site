@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+html {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Alata", "sans-serif";
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 45px;
+  margin: 0;
+}
+
+.hero .element3 {
+  padding-right: 30px;
+}
+.hero .element3 img {
+  position: absolute;
+}
+.hero .element3 .login {
+  translate: -15px;
+  position: relative;
+  right: 35px;
+  display: flex;
+  flex-direction: row;
+}
+.hero .element3 .login p {
+  padding-left: 30px;
+}
+.hero .element3 .login p:hover::after {
+  position: absolute;
+  content: " ";
+  width: 30px;
+  border-bottom: 2px solid white;
+  bottom: -5px;
+  left: 70%;
+  transform: translateX(-50%);
+}
+.hero .element3 .carT {
+  margin-bottom: 25px;
+}
+.hero .element3 .signIn {
+  translate: 30px;
+}
+.hero .element3 .logIn {
+  translate: 30px;
+}
+
+.panels .container .seeAll {
+  width: 50%;
+}
+.panels .container .categories {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 3);
+}
+.panels .container .categories article {
+  height: 450px;
+}/*# sourceMappingURL=specificCreation-medium.css.map */

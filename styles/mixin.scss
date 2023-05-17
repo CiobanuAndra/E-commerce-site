@@ -1,0 +1,45 @@
+// .creations{
+//     article{
+//         &:nth-child(1) {
+//             background-image: url('../SOURCES/CATEGORIES/chandeliers/chandelier1.jpg');
+
+//         }
+
+//         &:nth-child(2) {
+//             background-image: url('../SOURCES/CATEGORIES/pendants.jpg');
+
+//         }
+
+//         &:nth-child(3) {
+//             background-image: url('../SOURCES/CATEGORIES/bath.jpg');
+
+//         }
+
+//         &:nth-child(4) {
+//             background-image: url('../SOURCES/CATEGORIES/wall-lights3.jpg');
+
+//         }
+
+        // &:nth-child(5) {
+        //     background-image: url('../SOURCES/CATEGORIES/ceiling1.jpg');
+
+        // }
+
+        // &:nth-child(6) {
+        //     background-image: url('../SOURCES/CATEGORIES/outdoor3.jpg');
+
+        // }
+//     }
+// }
+
+
+
+// $images: 'chandelier1','chandelier2','chandelier3','chandelier4';
+// @mixin images (){
+//     @for $cifra from 1 through 4{
+//         &:nth-child(#{$cifra}){
+//             background-image: url('../SOURCES/CATEGORIES/chandeliers/#{nth($images,$cifra)}.jpg' );
+
+//         }
+//     }
+// }

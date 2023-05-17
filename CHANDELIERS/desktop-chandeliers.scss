@@ -1,0 +1,50 @@
+
+@import 'colors';
+@import 'spacings';
+@import 'typography';
+@import 'base';
+
+
+.container{
+  
+    box-sizing: border-box;
+    max-width: 1840px;
+    margin: auto;
+
+}
+.hero{
+    // font-size: 18px;
+
+    nav{
+        font-size: 18px;
+    }
+    h1{
+        min-width: 1440px;
+        max-width: 1780px;
+    }
+    .element3{
+        span{
+            font-size: 18px;
+
+        }
+
+    }
+    .element4{
+        .label{
+            input{
+                width: 350px;
+            }
+        }
+    }
+}
+.panels{
+    .container{
+        .seeAll{
+            height: 65px;
+            // background-color: red;
+            font-size: 20px;
+    
+        } 
+    }
+ 
+}

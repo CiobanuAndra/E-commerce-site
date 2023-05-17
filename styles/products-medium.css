@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+html {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Alata", "sans-serif";
+}
+
+button {
+  font-family: "Alata", "sans-serif";
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 45px;
+  margin: 0;
+}
+
+.hero .container nav {
+  transform: translateX(-20px);
+  font-size: 17px;
+}
+.hero .container nav ul {
+  gap: 15px;
+}
+.hero .container .element3 {
+  padding-top: 0px;
+}
+.hero .container .element3 img {
+  position: absolute;
+}
+.hero .container .element3 .login {
+  translate: -15px;
+  position: relative;
+  right: 35px;
+  display: flex;
+  flex-direction: row;
+}
+.hero .container .element3 .login p {
+  font-size: 17px;
+  padding-left: 30px;
+}
+.hero .container .element3 .login p:hover::after {
+  position: absolute;
+  content: " ";
+  width: 30px;
+  border-bottom: 2px solid white;
+  bottom: -5px;
+  left: 70%;
+  transform: translateX(-50%);
+}
+.hero .container .element3 .carT .cartNumberHero {
+  position: relative;
+  bottom: 15px;
+}
+.hero .container .element3 .carT img {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  z-index: 2;
+}
+.hero .container .element3 .myAccount {
+  transform: translateX(0px);
+}
+
+.panels .container {
+  padding-bottom: 45px;
+}
+.panels .container .products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  gap: 20px;
+}
+.panels .container .products article {
+  width: calc(50% - 10px);
+  max-width: 550px;
+  height: 50rem;
+  justify-content: space-between;
+}
+.panels .container .products article img {
+  height: 70%;
+}
+.panels .container .products article .divTitleButton {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 100%;
+  background-color: rgb(213, 236, 222);
+  align-items: center;
+  justify-content: space-between;
+}
+.panels .container .products article .divTitleButton h3 {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  position: static;
+}
+.panels .container .products article .divTitleButton button {
+  height: 100%;
+  width: calc(100% - 30px);
+  margin: 15px 15px;
+  max-height: 55px;
+}
+
+.footer {
+  text-align: unset;
+  padding-bottom: 70px;
+}
+.footer footer {
+  display: grid;
+  grid-template-rows: 0.3fr 0.7fr 0.2fr;
+  grid-template-columns: 1.5fr 0.5fr;
+}
+.footer footer .logo-footer {
+  justify-content: start;
+}
+.footer footer .logo-footer a.logo img {
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.footer footer nav {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 18px;
+  align-self: center;
+}
+.footer footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 16px;
+  padding: 0px;
+}
+.footer footer nav ul li {
+  padding-top: 0;
+}
+.footer footer .reserved:first-of-type {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footer footer p:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-indent: 30px;
+}
+.footer footer .social {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-content: flex-end;
+  align-self: end;
+  padding-bottom: 25px;
+}
+.footer footer .social ul {
+  justify-content: end;
+  width: 100%;
+  padding: 0px;
+  gap: 20px;
+}/*# sourceMappingURL=products-medium.css.map */

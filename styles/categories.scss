@@ -1,0 +1,593 @@
+@import 'colors';
+@import 'spacings';
+@import 'typography';
+@import 'base';
+@import 'keyframes';
+
+
+.visibility{
+    visibility: unset;
+   
+}
+.hidden{
+    visibility: hidden;
+}
+body{
+    position: relative;
+    background-color: $backgorundColor1;
+    .bkg{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: #000000;
+        z-index: 2;
+        opacity: 35%;
+
+    }
+   
+
+    .navigation-bar{
+        font-size: 16px;
+        background-color: $backgorundColor3;
+        border-right: 1px solid rgb(94, 94, 94);
+        height: 100%;
+        width: 360px;
+        z-index: 3;
+        display: grid;
+        grid-template-rows: auto 1fr 1fr;
+        overflow: hidden;
+        position: fixed;
+        header{
+            box-sizing: border-box;
+            background-color: $backgorundColor4;
+            display: flex;
+            align-items: center;
+            button{ 
+                cursor: pointer;
+                background-color: $backgorundColor4;
+                margin-right: 20px;
+                padding: 0;
+                border: 0;
+                img{
+                    height: 25px;
+                    width: 25px;
+                    margin: 10px;
+                }
+            }
+        }
+        .navigation-body{
+            ul{
+                margin:0;
+                padding: 0;
+                li{
+                    cursor: pointer;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 15px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 15px;
+                    border-bottom: 1px solid gray;
+                    button{
+                        border: 0;
+                        // background-color: none;
+                    }
+
+                }
+            }
+        }
+        .navigation-footer{
+            justify-content: flex-end;
+            display: flex;
+            button{
+                align-self: flex-end;
+                width: 100%;
+                .menu-footer{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .first-half{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+            
+                        h3{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.translate{
+    animation-name: translate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+
+.hero{
+    background-image:url('../SOURCES/HERO/hero-lights/lights4(3).jpg');
+    // backdrop-filter: blur(200px);
+    // backdrop-filter: blur(10px);
+    // -webkit-backdrop-filter: blur(10px);
+    
+    background-position: top;
+    background-size: cover;
+    height: 20vh;
+    padding-top: $lgSpacing;
+    position:relative;
+    
+    header{
+    //    overflow: block;
+        display: grid;
+        align-items: center;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr;
+        height: 120px;
+        
+    }
+    .element1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .element2{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    .element3{
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self:end; 
+         p{
+            font-family: 'Alata','sans-serif';
+
+         }
+    }
+    
+    .element4{
+        grid-column: 1 / span 6;
+        grid-row: 2/3;
+    }
+    h1{
+        text-align: center;
+        color: $fontColor2;
+        border: 5px solid $fontColor2;
+        margin: 0;
+        padding: $mdSpacing;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        //am mutat centrul de greutate//
+        width:calc(100% - 2*$container-spacing);
+        text-shadow:-5px 2px $backgorundColor6;
+    }
+    .element1{
+        // position: relative;
+        button{
+            padding: 0px;
+
+        }
+      
+        img{
+            height: 25px;
+        }
+    }
+    .element2{
+        img{
+            height: 25px;
+        }
+    }
+    .element3{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+        padding-right: 0px;
+        .login{
+            padding-right: 8px;
+            align-items: center;
+            display: none;
+            span{
+                color: white;
+                margin: 0;
+                translate: 25px;
+            }
+        }
+        button{
+            padding: 0px;
+        }
+        img{
+            height: 25px;
+           fill: white;
+        }
+        .signIn{
+            justify-self: end;
+            background-color: $backgorundColor3;
+            top: 100px;
+            position: absolute;
+            height: 400px;
+            width: 350px;
+            padding: 15px 30px;
+            z-index: 1;
+            display: grid;
+            grid-template-rows: 0.2fr 1fr;
+            gap: 1.5rem;
+            h3{
+                margin: 0px;
+                align-self: center;
+            }
+            form{
+                display: grid;
+                gap: 0.5rem;
+                grid-template-rows: 1.2fr 1.2fr  0.8fr 0.8fr;
+                font-size: 15px;
+                div{
+                    color: $fontColor3;
+                    display: flex;
+                    gap: 5px;
+                    flex-direction: column;
+                    input{
+                        border: 1px solid $backgorundColor4;
+                        height:40px ;
+                        width: 100%;
+                        // font-size: 20px;
+                        color: rgb(90, 90, 90);
+                        padding: 10px 15px;
+                    }
+                    label{
+                        position: relative;
+                    }
+                    // label:before {
+                    //     content: url('../SOURCES/HERO/icons/search.svg');
+                    //     position: absolute;
+                    //     left: 10px;
+                    //     // top: 10px;
+                    //     // bottom: 0px;
+                    //     width: 20px;
+                    // }
+                }
+                button{
+                    width: 75%;
+                    height: 75%;
+                    justify-self: center;
+                    right: 30px;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                button:first-of-type{
+                    background-color: $backgorundColor1;
+                    color: white;
+                    border:1px solid $backgorundColor4;
+                }
+                button:last-of-type{
+                    background-color: white;
+                    color: $fontColor3;
+                    border:1px solid $backgorundColor4;
+
+                }
+
+            }
+        }
+
+        .logIn{
+            
+            justify-self: end;
+            background-color: $backgorundColor3;
+            top: 100px;
+            position: absolute;
+            height: 560px;
+            width: 350px;
+            padding: 15px 30px;
+            z-index: 1;
+            display: grid;
+            grid-template-rows: 0.2fr 1fr;
+            gap: 1.5rem;
+            h3{
+                margin: 0px;
+                align-self: center;
+            }
+            form{
+                display: grid;
+                gap: 0.5rem;
+                grid-template-rows: 1.2fr 1.2fr  0.8fr 0.8fr;
+                font-size: 15px;
+                div{
+                    color: $fontColor3;
+                    display: flex;
+                    gap: 5px;
+                    flex-direction: column;
+                    input{
+                        border: 1px solid $backgorundColor4;
+                        height:40px ;
+                        width: 100%;
+                        color: rgb(90, 90, 90);
+                        padding: 10px 15px;
+                    }
+                    label{
+                        position: relative;
+                    }
+                }
+                button{
+                    width: 75%;
+                    height: 100%;
+                    justify-self: center;
+                    right: 30px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin-top: 15px;
+                }
+                button:first-of-type{
+                    background-color: $backgorundColor1;
+                    color: white;
+                    border:1px solid $backgorundColor4;
+                }
+                button:last-of-type{
+                    background-color: white;
+                    color: $fontColor3;
+                    border:1px solid $backgorundColor4;
+
+                }
+
+            }
+
+        }
+
+
+
+
+
+    }
+    
+    @media screen and (max-width: 375px) {
+        h1{
+            font-size: 2rem;
+        }
+        
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    nav{
+        display:none;
+    }
+        
+    label {
+        position: relative;
+        
+    }
+
+   
+    .element4{
+        .label{
+            padding-top:$mdSpacing ;
+            display: flex;
+            justify-content: center;
+        }
+            label:before {
+            content: url('../SOURCES/HERO/icons/search.svg');
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            bottom: 0px;
+            width: 20px;
+        }
+        input {
+            border-radius: 10px;
+            border-color: rgb(211, 170, 158);
+            padding: 10px 30px;
+        }
+    }
+   
+}
+
+
+// -----------------------------------------------------------------------------------------------------//
+
+
+.incursion{
+    .transition{
+        padding-top:$mdSpacing ;
+    }
+    .buttons{
+            padding-top:$mdSpacing;
+            .container2{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap:$mdSpacing ;
+            }
+            div{
+                width: 100%;
+            }
+            form{
+                // width: 100%;
+                display: flex;
+                justify-content: center;
+               
+            }
+            .sales,.brands{
+                height: 100%;
+                position: relative;
+            }
+        
+            img{
+                width: 100%;
+               
+            }
+            button{
+               border-radius: 10px;
+               bottom: 5%;
+               border:1px solid rgb(85, 85, 85);
+               background-color: white;
+               padding: $baseSpacing $lgSpacing;   
+               cursor: pointer;   
+               width: 50%;
+               height: 7%;
+               letter-spacing: 2px;
+               text-transform: uppercase;
+               color: #525252;
+               transition: background-color 0.2s ease-in 0s, color  ease-in 0.2s;
+               position: absolute;
+            }
+            button:hover{
+                background-color: $backgorundColor4;
+                color: white;
+            }
+            
+        }
+}
+
+    
+        
+    
+
+
+
+
+    // -----------------------------------------------------------------------------------------------------//
+
+        .panels {
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+     
+                
+            }
+          
+            .titleContainer{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .line{
+                    width: 100%;
+                    height: 2px;
+                    background-color: #525252;
+                }
+            }
+            
+            h2 {
+                padding: 0px 15px;
+                text-align: center;
+                // color: #302c2c;
+            }
+            h3 {
+                color: $fontColor2;
+                margin: 0px;
+                width: 50%;
+            }
+            article {
+                padding: $mdSpacing;
+                margin-bottom: $mdSpacing ;
+                height: 250px;
+                background-position: top center;
+                background-size: cover;
+    
+                &:nth-child(1) {
+                    background-image: url('../SOURCES/CATEGORIES/chandelier5.jpg');
+    
+                }
+    
+                &:nth-child(2) {
+                    background-image: url('../SOURCES/CATEGORIES/pendants.jpg');
+    
+                }
+    
+                &:nth-child(3) {
+                    background-image: url('../SOURCES/CATEGORIES/bath.jpg');
+    
+                }
+    
+                &:nth-child(4) {
+                    background-image: url('../SOURCES/CATEGORIES/wall-lights3.jpg');
+    
+                }
+    
+                &:nth-child(5) {
+                    background-image: url('../SOURCES/CATEGORIES/ceiling1.jpg');
+    
+                }
+    
+                &:nth-child(6) {
+                    background-image: url('../SOURCES/CATEGORIES/outdoor3.jpg');
+    
+                }
+                
+            }
+          
+    
+        }
+    
+
+
+
+
+
+
+
+
+
+     // -----------------------------------------------------------------------------------------------------//
+
+
+
+     .footer{
+        background-color: $backgorundColor2;
+        color:$fontColor2;
+        // margin-top: $lgSpacing;
+        padding: $xlSpacing 0;
+        text-align: center;
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        // footer{
+        //     height: 600px;
+        // }
+        img{
+            margin: 0 auto;
+            padding-bottom:$baseSpacing ;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .text{
+            padding-top:$baseSpacing ;
+        }
+        .social{
+            width: 100%;
+            ul{
+                padding-top:$baseSpacing ;
+                display: flex;
+                margin: 0 auto;
+                justify-content: space-between;
+                width: 140px;
+                height: 35px;
+                img{
+                    height: 35px
+                }
+            }
+        }
+     }

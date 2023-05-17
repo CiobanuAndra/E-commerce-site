@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+@import 'colors';
+html{
+    font-size: 13px;
+}
+h1{
+    font-size: 2.5rem;
+    color: $fontColor1;
+}
+h2{
+    font-size: 2.5rem;
+    color: $fontColor2;
+}
+
+body{
+    font-family: 'Alata','sans-serif';
+}
+button{
+    font-family: 'Alata','sans-serif';
+
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}

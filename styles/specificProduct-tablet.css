@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+html {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Alata", "sans-serif";
+}
+
+button {
+  font-family: "Alata", "sans-serif";
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 45px;
+  margin: 0;
+}
+
+.panels .bigContainer .product-detail .pricePlusMinusButtons {
+  max-height: 100%;
+  margin-left: 20px;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons p:first-of-type {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons p:nth-last-of-type(1) {
+  margin-left: 20px;
+  font-size: 2rem;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons .shop-action {
+  margin-right: 20px;
+  font-size: 2rem;
+  padding-top: 20px;
+  text-align: center;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons .shop-action button {
+  font-size: 2.5rem;
+  width: 3.2rem;
+  font-size: 100%;
+  vertical-align: center;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons .addButton {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 10px 40px 20px 40px;
+  height: 5rem;
+  font-size: 1.8rem;
+  color: rgb(69, 90, 77);
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons .favorite {
+  padding-bottom: 10px;
+  width: 290px;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons .favorite button {
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons .favorite button p {
+  font-size: 1.8rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons .favorite button .heartEmpty {
+  min-height: 55px;
+  min-width: 55px;
+}
+.panels .bigContainer .product-detail .pricePlusMinusButtons .favorite button .heartFill {
+  min-height: 55px;
+  min-width: 55px;
+}
+
+.hero header {
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 120px;
+}
+.hero .element1 {
+  display: none;
+}
+.hero .element2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: start;
+}
+.hero nav {
+  font-size: 15px;
+  grid-column-start: 3;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding-right: 100px;
+}
+.hero nav li {
+  list-style: none;
+}
+.hero nav ul {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 19px;
+}
+.hero nav ul ul {
+  text-shadow: -2px 2px rgb(69, 90, 77);
+  align-items: center;
+  display: flex;
+}
+.hero nav ul ul li {
+  padding-right: 8px;
+  position: relative;
+}
+.hero nav ul ul li:hover {
+  cursor: pointer;
+}
+.hero nav ul ul li:hover::after {
+  position: absolute;
+  content: " ";
+  width: 25px;
+  border-bottom: 2px solid white;
+  bottom: -3px;
+  left: 40%;
+  transform: translateX(-50%);
+}
+.hero .element3 {
+  display: flex;
+  grid-column-start: 12;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 2;
+}
+.hero .element3 .signIn {
+  translate: 30px 40px;
+}
+.hero .element3 .logIn {
+  translate: 30px 30px;
+  top: 135px;
+}
+.hero .element4 {
+  grid-column-start: 10;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  translate: 15px -13px;
+}
+.hero .element4 input {
+  max-width: 60%;
+}
+
+.footer {
+  text-align: unset;
+}
+.footer footer {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-columns: 1.5fr 0.5fr;
+}
+.footer footer .logo-footer {
+  justify-content: start;
+}
+.footer footer .logo-footer a.logo img {
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.footer footer nav {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 18px;
+}
+.footer footer nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-end;
+}
+.footer footer nav ul li {
+  padding-top: 0;
+}
+.footer footer .reserved:first-of-type {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 18px;
+  text-indent: 0px;
+}
+.footer footer p:nth-child(4) {
+  font-size: 18px;
+  text-indent: 0px;
+}
+.footer footer .social {
+  justify-content: flex-end;
+  align-self: center;
+}
+.footer footer .social ul {
+  justify-content: end;
+  width: 100%;
+  padding: 0;
+  gap: 20px;
+}/*# sourceMappingURL=specificProduct-tablet.css.map */

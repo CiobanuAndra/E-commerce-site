@@ -1,0 +1,112 @@
+
+@import 'colors';
+@import 'spacings';
+@import 'typography';
+@import 'base';
+
+
+.container{
+  
+    box-sizing: border-box;
+    max-width: 1840px;
+    margin: auto;
+    padding: 0 2*$lgSpacing;
+
+
+}
+.hero{
+    // font-size: 18px;
+.container{
+    nav{
+        ul{
+            font-size: 22px;
+
+        }
+    }
+    h1{
+        width: calc(100% - 4*$lgSpacing);
+        // min-width: 1440px;
+        // max-width: 1780px;
+        max-width: 1660px;
+        margin-right: 90px;
+    }
+    .element3{
+        .login{
+            p{
+                font-size: 22px;
+    
+            }
+            img{
+                height: 30px;
+            }
+        }
+        .carT{
+            img{
+                height: 30px;
+            }
+        }
+        
+
+    }
+    .element4{
+        .label{
+            input{
+                width: 345px;
+                translate:-35px ;
+               
+            }
+            label:before {
+                z-index: 2;
+                left: -25px;
+            }
+
+        }
+    }
+}
+   
+}
+
+.panels{
+    .bigContainer{
+        // background-color: red;
+
+        .product-detail{
+            max-height: 500px;
+            img{
+            max-height: 500px;
+
+            }
+
+            .pricePlusMinusButtons{
+                max-height: 500px;
+                .addButton{
+                    height: 6rem;
+                    font-size: 2rem;
+
+                }
+                .shop-action{
+                    button{
+                        width: 3.8rem;
+                        height: 3.8rem ;
+                        font-size: 2.6rem;
+                    }
+
+                }
+                .favorite{
+                    max-height: 80px;
+
+                    button{
+                    max-height: 80px;
+
+                        p{
+                            font-size: 2rem;
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

@@ -1,0 +1,1046 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+html {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Alata", "sans-serif";
+}
+
+button {
+  font-family: "Alata", "sans-serif";
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 45px;
+  margin: 0;
+}
+
+@keyframes translate {
+  from {
+    left: -359px;
+  }
+  to {
+    left: 0;
+  }
+}
+.visibility {
+  visibility: unset;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.displayNone {
+  display: none;
+}
+
+body {
+  position: relative;
+  background-color: rgb(166, 182, 172);
+}
+body .bkg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #000000;
+  z-index: 2;
+  opacity: 35%;
+}
+body .navigation-bar {
+  font-size: 16px;
+  background-color: rgb(178, 202, 188);
+  border-right: 1px solid rgb(94, 94, 94);
+  height: 100%;
+  width: 360px;
+  z-index: 3;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  overflow: hidden;
+  position: fixed;
+}
+body .navigation-bar header {
+  box-sizing: border-box;
+  background-color: rgb(125, 165, 141);
+  display: flex;
+  align-items: center;
+}
+body .navigation-bar header button {
+  cursor: pointer;
+  background-color: rgb(125, 165, 141);
+  margin-right: 20px;
+  padding: 0;
+  border: 0;
+}
+body .navigation-bar header button img {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+}
+body .navigation-bar .navigation-body ul {
+  margin: 0;
+  padding: 0;
+}
+body .navigation-bar .navigation-body ul li {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  border-bottom: 1px solid gray;
+}
+body .navigation-bar .navigation-body ul li button {
+  border: 0;
+  background-color: rgb(178, 202, 188);
+}
+body .navigation-bar .navigation-footer {
+  justify-content: flex-end;
+  display: flex;
+}
+body .navigation-bar .navigation-footer button {
+  align-self: flex-end;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(125, 165, 141);
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+}
+body .navigation-bar .navigation-footer button .menu-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .navigation-bar .navigation-footer button .menu-footer .first-half {
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 5px;
+}
+body .navigation-bar .navigation-footer button .menu-footer p {
+  margin: 0;
+  font-family: "Alata", "sans-serif";
+}
+
+.translate {
+  animation-name: translate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.alertMessage {
+  position: fixed;
+  display: none;
+  display: none;
+  padding: 20px;
+  background-color: rgb(125, 165, 141);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  justify-self: center;
+  border: rgb(90, 109, 98) solid 3px;
+  border-radius: 20px;
+  cursor: pointer;
+  top: 170px;
+  left: 20%;
+  z-index: 3;
+}
+.alertMessage .message {
+  font-size: 18px;
+}
+.alertMessage .closebtn {
+  align-self: flex-start;
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.alertMessage .closebtn:hover {
+  color: black;
+}
+
+.hero {
+  background-image: url("../SOURCES/HERO/hero-lights/lights4(3).jpg");
+  background-position: top;
+  background-size: cover;
+  height: 80vh;
+  padding-top: 45px;
+  position: relative;
+}
+.hero header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100px;
+}
+.hero .element1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.hero .element2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+}
+.hero .element3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: end;
+}
+.hero .element3 p {
+  font-family: "Alata", "sans-serif";
+}
+.hero .element4 {
+  grid-column: 1/span 6;
+  grid-row: 2/3;
+}
+.hero h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(255, 255, 255);
+  margin: 0;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 90px);
+  text-shadow: -5px 2px rgb(69, 90, 77);
+}
+.hero .element1 button {
+  padding: 0px;
+}
+.hero .element1 img {
+  height: 25px;
+}
+.hero .element2 {
+  display: flex;
+  flex-direction: row;
+}
+.hero .element2 a {
+  text-decoration: none;
+}
+.hero .element2 a img {
+  min-height: 45px;
+  display: inline;
+}
+.hero .element2 a h3 {
+  vertical-align: 10px;
+  text-shadow: -5px 2px rgb(69, 90, 77);
+  font-size: 25px;
+  padding-left: 5px;
+  color: white;
+  display: inline;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+.hero .element3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  padding-right: 0px;
+  padding-top: 20px;
+}
+.hero .element3 .login {
+  white-space: nowrap;
+  padding-right: 8px;
+  align-items: center;
+  display: none;
+  padding: 0px;
+}
+.hero .element3 .login p {
+  color: white;
+  margin: 0;
+  translate: 15px;
+  text-shadow: -2px 2px rgb(69, 90, 77);
+  font-size: 13px;
+}
+.hero .element3 .login img {
+  translate: 15px;
+}
+.hero .element3 button {
+  padding: 0px;
+}
+.hero .element3 img {
+  height: 25px;
+  width: 25px;
+  fill: white;
+}
+.hero .element3 .carT img {
+  height: 25px;
+  width: 25px;
+}
+.hero .element3 .carT .cartNumberHero {
+  position: relative;
+  height: 23px;
+  min-width: 23px;
+  bottom: 35px;
+  left: 20px;
+  color: white;
+  background-color: rgb(125, 165, 141);
+  border: white solid 1px;
+  border-radius: 100%;
+  font-size: 15px;
+}
+.hero .element3 .signIn {
+  justify-self: end;
+  background-color: rgb(178, 202, 188);
+  top: 150px;
+  position: absolute;
+  height: 400px;
+  width: 350px;
+  padding: 15px 30px;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(69, 90, 77, 0.63);
+}
+.hero .element3 .signIn h3 {
+  margin: 0px;
+  align-self: center;
+}
+.hero .element3 .signIn form {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: 1.2fr 1.2fr 0.8fr 0.8fr;
+  font-size: 15px;
+}
+.hero .element3 .signIn form div {
+  color: rgb(104, 80, 80);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.hero .element3 .signIn form div input {
+  border: 1px solid rgb(125, 165, 141);
+  height: 40px;
+  width: 100%;
+  color: rgb(90, 90, 90);
+  padding: 10px 15px;
+}
+.hero .element3 .signIn form div label {
+  position: relative;
+}
+.hero .element3 .signIn form button {
+  width: 75%;
+  height: 75%;
+  justify-self: center;
+  right: 30px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.hero .element3 .signIn form button:first-of-type {
+  background-color: rgb(166, 182, 172);
+  color: white;
+  border: 1px solid rgb(125, 165, 141);
+}
+.hero .element3 .signIn form button:last-of-type {
+  background-color: white;
+  color: rgb(104, 80, 80);
+  border: 1px solid rgb(125, 165, 141);
+}
+.hero .element3 .myAccount {
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(69, 90, 77, 0.63);
+  font-size: 16px;
+  overflow: hidden;
+  justify-self: end;
+  background-color: rgb(178, 202, 188);
+  top: 150px;
+  position: absolute;
+  width: 350px;
+  padding: 10px 10px;
+  z-index: 1;
+}
+.hero .element3 .myAccount ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.hero .element3 .myAccount ul li {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+.hero .element3 .myAccount ul li button {
+  border: 0;
+  background-color: rgb(178, 202, 188);
+  padding: 0;
+  border: 0;
+  width: 25px;
+}
+.hero .element3 .myAccount ul li button img {
+  position: unset;
+  height: 20px;
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  align-self: center;
+  justify-self: center;
+}
+.hero .element3 .myAccount ul li:nth-child(2) {
+  border-bottom: 1px solid gray;
+}
+.hero .element3 .logIn {
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(69, 90, 77, 0.63);
+  justify-self: end;
+  background-color: rgb(178, 202, 188);
+  top: 150px;
+  position: absolute;
+  height: 560px;
+  width: 350px;
+  padding: 15px 30px;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 1.5rem;
+}
+.hero .element3 .logIn h3 {
+  margin: 0px;
+  align-self: center;
+}
+.hero .element3 .logIn form {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: 1.2fr 1.2fr 0.8fr 0.8fr;
+  font-size: 15px;
+}
+.hero .element3 .logIn form div {
+  color: rgb(104, 80, 80);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.hero .element3 .logIn form div input {
+  border: 1px solid rgb(125, 165, 141);
+  height: 40px;
+  width: 100%;
+  color: rgb(90, 90, 90);
+  padding: 10px 15px;
+}
+.hero .element3 .logIn form div label {
+  position: relative;
+}
+.hero .element3 .logIn form button {
+  width: 75%;
+  height: 100%;
+  justify-self: center;
+  right: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.hero .element3 .logIn form button:first-of-type {
+  background-color: rgb(166, 182, 172);
+  color: white;
+  border: 1px solid rgb(125, 165, 141);
+}
+.hero .element3 .logIn form button:last-of-type {
+  background-color: white;
+  color: rgb(104, 80, 80);
+  border: 1px solid rgb(125, 165, 141);
+}
+@media screen and (max-width: 375px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+.hero button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.hero nav {
+  display: none;
+}
+.hero label {
+  position: relative;
+}
+.hero .element4 .label {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.hero .element4 label:before {
+  content: url("../SOURCES/HERO/icons/search.svg");
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 0px;
+  width: 20px;
+}
+.hero .element4 input {
+  background-color: rgb(243, 235, 197);
+  border-radius: 10px;
+  border-color: rgb(211, 170, 158);
+  padding: 10px 30px;
+}
+
+.hero {
+  background-image: url("../SOURCES/HERO/hero-lights/lights4(3).jpg");
+  background-position: top;
+  background-size: cover;
+  height: 80vh;
+  padding-top: 45px;
+  position: relative;
+}
+.hero header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100px;
+}
+.hero .element1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.hero .element2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+}
+.hero .element3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: end;
+}
+.hero .element3 p {
+  font-family: "Alata", "sans-serif";
+}
+.hero .element4 {
+  grid-column: 1/span 6;
+  grid-row: 2/3;
+}
+.hero h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  margin: 0;
+  padding: 70px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 90px);
+  text-shadow: -5px 2px rgb(69, 90, 77);
+  height: 30%;
+}
+.hero .element1 button {
+  padding: 0px;
+}
+.hero .element1 img {
+  height: 25px;
+}
+.hero .element2 {
+  display: flex;
+  flex-direction: row;
+}
+.hero .element2 a {
+  text-decoration: none;
+}
+.hero .element2 a img {
+  min-height: 45px;
+  display: inline;
+}
+.hero .element2 a h3 {
+  vertical-align: 10px;
+  text-shadow: -5px 2px rgb(69, 90, 77);
+  font-size: 25px;
+  padding-left: 5px;
+  color: white;
+  display: inline;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+.hero .element3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  padding-right: 0px;
+}
+.hero .element3 .login {
+  white-space: nowrap;
+  padding-right: 8px;
+  align-items: center;
+  display: none;
+  padding: 0px;
+}
+.hero .element3 .login p {
+  color: white;
+  margin: 0;
+  translate: 15px;
+  text-shadow: -2px 2px rgb(69, 90, 77);
+  font-size: 13px;
+}
+.hero .element3 .login img {
+  translate: 15px;
+}
+.hero .element3 button {
+  padding: 0px;
+}
+.hero .element3 img {
+  height: 25px;
+  fill: white;
+}
+.hero .element3 .signIn {
+  justify-self: end;
+  background-color: rgb(178, 202, 188);
+  top: 150px;
+  position: absolute;
+  height: 400px;
+  width: 350px;
+  padding: 15px 30px;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 1.5rem;
+}
+.hero .element3 .signIn h3 {
+  margin: 0px;
+  align-self: center;
+}
+.hero .element3 .signIn form {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: 1.2fr 1.2fr 0.8fr 0.8fr;
+  font-size: 15px;
+}
+.hero .element3 .signIn form div {
+  color: rgb(104, 80, 80);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.hero .element3 .signIn form div input {
+  border: 1px solid rgb(125, 165, 141);
+  height: 40px;
+  width: 100%;
+  color: rgb(90, 90, 90);
+  padding: 10px 15px;
+}
+.hero .element3 .signIn form div label {
+  position: relative;
+}
+.hero .element3 .signIn form button {
+  width: 75%;
+  height: 75%;
+  justify-self: center;
+  right: 30px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.hero .element3 .signIn form button:first-of-type {
+  background-color: rgb(166, 182, 172);
+  color: white;
+  border: 1px solid rgb(125, 165, 141);
+}
+.hero .element3 .signIn form button:last-of-type {
+  background-color: white;
+  color: rgb(104, 80, 80);
+  border: 1px solid rgb(125, 165, 141);
+}
+.hero .element3 .myAccount {
+  font-size: 16px;
+  overflow: hidden;
+  justify-self: end;
+  background-color: rgb(178, 202, 188);
+  top: 150px;
+  position: absolute;
+  width: 350px;
+  padding: 10px 10px;
+  z-index: 1;
+}
+.hero .element3 .myAccount ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.hero .element3 .myAccount ul li {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+.hero .element3 .myAccount ul li button {
+  border: 0;
+  background-color: rgb(178, 202, 188);
+  padding: 0;
+  border: 0;
+  width: 25px;
+}
+.hero .element3 .myAccount ul li button img {
+  position: unset;
+  height: 20px;
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  align-self: center;
+  justify-self: center;
+}
+.hero .element3 .myAccount ul li:nth-child(2) {
+  border-bottom: 1px solid gray;
+}
+.hero .element3 .logIn {
+  justify-self: end;
+  background-color: rgb(178, 202, 188);
+  top: 150px;
+  position: absolute;
+  height: 560px;
+  width: 350px;
+  padding: 15px 30px;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 1.5rem;
+}
+.hero .element3 .logIn h3 {
+  margin: 0px;
+  align-self: center;
+}
+.hero .element3 .logIn form {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: 1.2fr 1.2fr 0.8fr 0.8fr;
+  font-size: 15px;
+}
+.hero .element3 .logIn form div {
+  color: rgb(104, 80, 80);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.hero .element3 .logIn form div input {
+  border: 1px solid rgb(125, 165, 141);
+  height: 40px;
+  width: 100%;
+  color: rgb(90, 90, 90);
+  padding: 10px 15px;
+}
+.hero .element3 .logIn form div label {
+  position: relative;
+}
+.hero .element3 .logIn form button {
+  width: 75%;
+  height: 100%;
+  justify-self: center;
+  right: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.hero .element3 .logIn form button:first-of-type {
+  background-color: rgb(166, 182, 172);
+  color: white;
+  border: 1px solid rgb(125, 165, 141);
+}
+.hero .element3 .logIn form button:last-of-type {
+  background-color: white;
+  color: rgb(104, 80, 80);
+  border: 1px solid rgb(125, 165, 141);
+}
+@media screen and (max-width: 375px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+.hero button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.hero nav {
+  display: none;
+}
+.hero label {
+  position: relative;
+}
+.hero .element4 .label {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.hero .element4 label:before {
+  content: url("../SOURCES/HERO/icons/search.svg");
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 0px;
+  width: 20px;
+}
+.hero .element4 input {
+  border-radius: 10px;
+  border-color: rgb(211, 170, 158);
+  padding: 10px 30px;
+}
+
+.panels .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.panels .container h2 {
+  padding: 0px 15px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+  text-shadow: 4px 5px 5px rgb(60, 78, 67);
+  letter-spacing: 1.5px;
+}
+.panels .container .product-detail {
+  margin-bottom: 40px;
+  background-color: rgb(213, 236, 222);
+  box-shadow: 0px 10px 15px rgba(69, 90, 77, 0.63);
+  border-radius: 20px;
+}
+.panels .container .product-detail img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.panels .container .product-detail .pricePlusMinusButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.2fr 0.5fr 0.3fr 0.3fr;
+}
+.panels .container .product-detail .pricePlusMinusButtons p:first-of-type {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 1.2rem;
+  color: rgb(69, 90, 77);
+  text-indent: 50px;
+  padding: 20px 40px 0px 40px;
+  margin: 0px;
+}
+.panels .container .product-detail .pricePlusMinusButtons p:nth-last-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 1.4rem;
+  color: rgb(69, 90, 77);
+  padding: 0px 40px 0px 40px;
+  margin: 0px;
+  padding-top: 20px;
+  vertical-align: middle;
+}
+.panels .container .product-detail .pricePlusMinusButtons .shop-action {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-top: 10px;
+  justify-self: end;
+  padding-right: 40px;
+  font-size: 1.2rem;
+  color: rgb(69, 90, 77);
+}
+.panels .container .product-detail .pricePlusMinusButtons .shop-action button {
+  font-size: 1.9rem;
+  color: rgb(69, 90, 77);
+  width: 2.8rem;
+  height: 100%;
+  border: 2px rgb(90, 109, 98) solid;
+  background-color: rgb(245, 242, 226);
+  border-radius: 10px;
+}
+.panels .container .product-detail .pricePlusMinusButtons .shop-action button:hover {
+  color: rgb(184, 13, 13);
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(69, 90, 77, 0.63);
+}
+.panels .container .product-detail .pricePlusMinusButtons .addButton {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 10px 40px 10px 40px;
+  height: 4rem;
+  font-size: 1.4rem;
+  color: rgb(69, 90, 77);
+  border: 2px rgb(90, 109, 98) solid;
+  background-color: rgb(245, 242, 226);
+  border-radius: 15px;
+}
+.panels .container .product-detail .pricePlusMinusButtons .addButton:hover {
+  color: rgb(184, 13, 13);
+  box-shadow: 0px 3px 15px rgba(69, 90, 77, 0.63);
+  cursor: pointer;
+}
+.panels .container .product-detail .pricePlusMinusButtons .favorite {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin: 10px 40px 20px 40px;
+  justify-self: center;
+  width: 33%;
+}
+.panels .container .product-detail .pricePlusMinusButtons .favorite button {
+  cursor: pointer;
+  justify-content: center;
+  background-color: rgb(213, 236, 222);
+  border-color: rgb(213, 236, 222);
+  border-radius: 35px;
+  border-style: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.panels .container .product-detail .pricePlusMinusButtons .favorite button .heartEmpty {
+  min-height: 30px;
+  min-width: 30px;
+  width: 30%;
+  max-width: 46px;
+  cursor: pointer;
+}
+.panels .container .product-detail .pricePlusMinusButtons .favorite button .heartEmpty path {
+  display: block;
+}
+.panels .container .product-detail .pricePlusMinusButtons .favorite button .heartFill {
+  min-height: 30px;
+  min-width: 30px;
+  width: 30%;
+  max-width: 46px;
+  fill: rgb(184, 13, 13);
+}
+.panels .container .product-detail .pricePlusMinusButtons .favorite button p {
+  cursor: pointer;
+  display: inline;
+  font-size: 1.4rem;
+  padding: 0px;
+  flex-wrap: nowrap;
+  justify-self: center;
+  align-self: center;
+  text-indent: 5px;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+.panels .container .product-detail .pricePlusMinusButtons .favorite button:hover .heartEmpty {
+  fill: rgb(184, 13, 13);
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 60px 0;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+}
+.footer .logo-footer {
+  display: flex;
+  justify-content: center;
+}
+.footer .logo-footer img {
+  height: 45px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.footer .logo-footer p {
+  font-size: 35px;
+  margin: 0;
+  cursor: pointer;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  padding-top: 15px;
+  margin: 0;
+}
+.footer ul li {
+  text-transform: uppercase;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.footer p:nth-child(3) {
+  text-align: start;
+  text-indent: 30px;
+  padding-top: 15px;
+}
+.footer .social {
+  width: 100%;
+}
+.footer .social ul {
+  padding-top: 15px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 140px;
+  height: 35px;
+}
+.footer .social ul img {
+  height: 25px;
+}/*# sourceMappingURL=specificProduct-main.css.map */

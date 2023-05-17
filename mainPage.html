@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium-scale.css" rel="stylesheet" media="screen and (min-width:630px)">
+    <link href="styles/tablet.css" rel="stylesheet" media="screen and (min-width:1200px)">
+    <link href="styles/desktop.css" rel="stylesheet" media="screen and (min-width:1540px)">
+    <script src="index.js" type="module"></script>
+    <!-- <script src="signIn&logIn.js" type="module"></script> -->
+    <script src="mainPage.js" type="module"></script>
+
+</head>
+
+
+<body>
+    <div id="root">
+        <div class="bkg hidden"></div>
+        <aside class="navigation-bar hidden" >
+            <header>
+                <button class="navigation-header">
+                    <span class="iacon-root">
+                        <img src="SOURCES/Navbar/x.svg" alt="pageLogo"/>
+        
+                    </span>
+                </button>
+                <span>Main Menu</span>
+            </header>
+            <div class="navigation-body">
+                <ul>
+                    <li>
+                        <a>
+                            <div>Bath</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                            
+                        </button>
+                    </li>
+                    <li>
+                        <a>
+                            <div>Ceiling</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <a>
+                            <div>Chandeliers</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <a>
+                            <div>Pendants</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <a>
+                            <div>Wall</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <a>
+                            <div>Lamps</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <a>
+                            <div>Outdoor</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <a>
+                            <div>Sales</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <a>
+                            <div>Brands</div>
+                        </a>
+                        <button type="button">
+                            <span>
+                                <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="navigation-footer">
+                <button>
+                    <span class="menu-footer">
+                        <span class="first-half">
+                            <img src="SOURCES/Navbar/person2.svg" alt="login"/>
+                        </span>
+                        <p>
+                            Sign in
+                        </p>
+                    </span>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+
+
+<!-- ____________________________________________________________________________________________________ -->
+<!-- //ALERT MESSAGE---------------------------------------------// -->
+    <div class="alertMessage hidden" >
+        <span class="message">
+        </span> 
+        <img class="closebtn" src="SOURCES/Navbar/x.svg" alt="close">
+    </div>
+
+
+
+<!-- ____________________________________________________________________________________________________ -->
+
+
+
+   <section class="hero">
+    <div class="container">
+        <header>
+
+            <div class="element1">
+                
+                <button id="hamburger">
+                    <img src="SOURCES/HERO/icons/hamburger.svg" alt="hamburgerMenu"/>
+                </button>
+               
+            </div>
+            <div class="element2">
+                <a href="#">
+                    <img src="SOURCES/HERO/icons/lamp.svg" alt="pageLogo"/>
+                    <h3>LIGHTS</h3>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    
+                    <!-- <li class="list"> -->
+                    <ul class="listProduct">
+                        <a><li>Bath</li></a>
+                        <a><li>Ceiling</li></a>
+                        <a> <li>Chandeliers</li></a>
+                        <a> <li>Pendants</li></a>
+                        <a><li>Wall</li> </a>
+                        <a>  <li>Lamps</li></a>
+                        <a> <li>Outdoor</li></a>
+                        <a>  <li>Sales</li></a>
+                        <a> <li>Brands</li></a>
+
+             
+                    </ul>
+                    <!-- </li> -->
+                    
+                </ul>
+            </nav>
+            <div class="element3">
+                <button class="login" id="login">
+                    <img src="SOURCES/HERO/icons/person.svg" alt="login"/>
+                    <!-- <span>Sign in</span> -->
+                    <p>
+                        Sign in
+                    </p>
+                </button>
+         
+                <button class="carT" id="carT">
+                    <img src="SOURCES/HERO/icons/cart3.svg" alt="cart" class="cart"/>
+                    <div class="cartNumberHero hidden"></div>
+
+                </button>
+
+                <aside class="signIn hidden">
+                    <h3>Sign-In To Your Account</h3>
+                    <form class="signIn-form">
+                        <div>
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email1" required/>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password1" required/>
+                        </div>
+                        <button type="submit" id="submitButton1">Sign in</button>
+                        <button type="button" class="createAccount">Create account</button>
+                    </form>
+                </aside>
+
+                <aside class="myAccount hidden">
+                    <!-- <h3>Sign-In To Your Account</h3> -->
+                    <div class="account">
+                        <ul>
+                            <li>
+                                <a>
+                                    <div>Wish List</div>
+                                </a>
+                                <button type="button">
+                                    <span>
+                                        <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                                    </span>
+                                    
+                                </button>
+                            </li>
+                            <li>
+                                <a>
+                                    <div>Account Informations</div>
+                                </a>
+                                <button type="button">
+                                    <span>
+                                        <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                                    </span>
+                                </button>
+                            </li>
+                            <li>
+                                <a>
+                                    <div>Log Out</div>
+                                </a>
+                                <button type="button">
+                                    <span>
+                                        <img src="SOURCES/Navbar/plus-lg.svg" alt="pageLogo"/>
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </aside>
+
+                <aside class="logIn hidden">
+                    <h3>Create Account</h3>
+                    <form class="signIn-form">
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" required/>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" required/>
+                        </div>
+                        <div>
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email2" required/>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password2" required/>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required/>
+                        </div>
+                        <button type="submit" id="submitButton2">Create account</button>
+                        <button type="button" class="cancel">Cancel</button>
+                    </form>
+                </aside>
+            </div>
+            <div class="element4">
+                <div class="label">
+                        <label>
+                            <input type="text" placeholder="Search" id="textSearch">
+                        </label>
+                </div>
+            </div>
+        </header>
+
+        <h1>A guiding light for your house</h1>
+    </div>
+    </section>
+
+
+   
+
+<!-- ____________________________________________________________________________________________________ -->
+
+<section class="incursion">
+    <div class="container">
+        <article class="transition">
+            <div class="container1">
+                <div class="slideshow-container">
+                    <div class="Containers">
+                        <div class="MessageInfo">1 / 3</div>
+                        <img src="SOURCES/INCURSION/imgInteriorDesign/int1.2.jpg" style="width:100%">
+                        <div class="Info">ELEGANCE</div>
+                    </div>
+                    
+                    <div class="Containers">
+                        <div class="MessageInfo">2 / 3</div>
+                        <img src="SOURCES/INCURSION/imgInteriorDesign/int11.jpg" style="width:100%">
+                        <div class="Info">QUALITY</div>
+                    </div>
+                    
+                    <div class="Containers">
+                        <div class="MessageInfo">3 / 3</div>
+                        <img src="SOURCES/INCURSION/imgInteriorDesign/int15.jpg" style="width:100%">
+                        <div class="Info">MODERN DESIGN</div>
+                    </div>
+                    
+                    <!-- Back and forward buttons -->
+                    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- <br> -->
+
+                <!-- The circles/dots -->
+                <div class="the3dots">
+                    <div>
+                        <span class="dots" onclick="currentSlide(1)"></span>
+                        <span class="dots" onclick="currentSlide(2)"></span>
+                        <span class="dots" onclick="currentSlide(3)"></span>
+                    </div> 
+                <!-- </div> -->
+                    
+
+                    <!-- <picture class="img1">
+                        <source media="(min-width:1200px)" srcset="SOURCES/INCURSION/imgInteriorDesign/int1.2.jpg">
+                        <img src="SOURCES/INCURSION/imgInteriorDesign/int1.2.jpg"  alt="Incursion image 1">
+                    </picture> -->
+                <!-- </div> -->
+
+                </div>
+            </div>
+           
+        </article>
+
+                 <!-- ____________________________________________________________________________________________________ -->
+        <div class="imgInvizibila" class="img2">
+            <!-- <source media="(min-width:1200px)"  srcset="SOURCES/INCURSION/imgInteriorDesign/int18.jpg"> -->
+            <img src="SOURCES/INCURSION/imgInteriorDesign/int18.jpg"  alt="Incursion image 1">
+        </div>
+
+        <article class="buttons">
+            <div class="container2">
+                <div class="sales">
+                    <img class="salesImage" src="SOURCES/BUTTONS/SALESS2.jpg">
+                    <form action="ButtonsPages/Sales.html">
+                        <button class="salesButton">Sales</button>
+                    </form>
+                </div>
+                <div class="brands">
+                    <img class="brandsImage" src="SOURCES/BUTTONS/BRANDSS2.jpg">
+                    <form action="ButtonsPages/Brands.html">
+                        <button class="brandsButton">Brands</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<!-- ____________________________________________________________________________________________________ -->
+
+
+
+   <section class="panels">
+        <div class="container">
+            <div class="titleContainer">
+                <div class="line"></div>
+                <h2> CATEGORIES </h2>
+                <div class="line"></div>
+            </div>
+          
+            <div class="categories">
+                <article id="Bath">
+                    <h3>Bath lights</h3>
+                </article>
+                <article id="Ceiling">
+                    <h3>Ceiling lights</h3>
+                </article>
+                <article id="Chandeliers">
+                    <h3>Chandeliers</h3>
+                </article>
+                <article id="Pendants">
+                    <h3>Pendants</h3>
+                </article>
+                <article id="Wall">
+                    <h3>Wall lights</h3>
+                </article>
+                <article id="Lamps">
+                    <h3>Lamps</h3>
+                </article>
+                <article id="Outdoor">
+                    <h3>Outdoor lights</h3>
+                </article>
+                <article id="Sales">
+                    <h3>Brands</h3>
+                </article>
+            </div>
+            <!-- <button class="seeAll">SEE ALL PRODUCTS</button> -->
+        </div>
+   </section>
+
+
+
+
+<!-- ____________________________________________________________________________________________________ -->
+
+
+   <!-- <section class="about-us"></section> -->
+
+   <!-- ____________________________________________________________________________________________________ -->
+
+
+   <section class="footer">
+        <div class="container">
+            <footer>
+                <div class="logo-footer">
+                    <a href="#" class="logo">
+                        <img src="SOURCES/HERO/icons/lamp2.svg" alt="pageLogo"/>
+                    </a>
+                    <p>LIGHTS</p>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>Cart</li> 
+                    </ul>
+                </nav>
+                <!-- <div class="text"> -->
+                    <p class="reserved">
+                        X Studio is an all in one stop to fulfill your home's need for light. We're a small team of architecture lovers and interior design specialists who are devoted to helping you get the most out of personal comfort. Come and visit our demo facility - we’re open 7 days a week.
+                    </p>
+                    <p class="reserved">
+                        @Company Copyright 2022. All Rights Reserved
+                    </p>
+                <!-- </div> -->
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="SOURCES/FOOTER/facebook2.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=ro">
+                                <img src="SOURCES/FOOTER/twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ro.pinterest.com/">
+                                <img src="SOURCES/FOOTER/pinterest.svg" alt="pinterest">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="SOURCES/FOOTER/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </footer>
+
+        </div>
+   </section>
+
+
+</body>
+</html>
+
+<!-- 300 -->
+

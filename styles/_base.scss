@@ -1,0 +1,16 @@
+@import 'spacings';
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.container{
+padding: 0 $lgSpacing;
+margin: 0;
+// overflow: scroll;
+}
